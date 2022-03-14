@@ -169,7 +169,7 @@ MonoBehaviour:
   gameTitle: Untitled Game
   gameCredits: Made by Me
   copyrightDate: Copyright 2022
-  recordHighScore: 1
+  recordHighScore: 0
   defaultHighScore: 1000
   numberOfLives: 3
   levelLost: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
   - level_00
   - level_01
   gameLevelsCount: 0
-  nextLevel: 0
+  nextLevel: 1
   gameState: 0
   playerWon: 0
 --- !u!1 &660969369

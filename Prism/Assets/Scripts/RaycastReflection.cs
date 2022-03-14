@@ -41,15 +41,46 @@ public class RaycastReflection : MonoBehaviour
         {
                 if(Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength))
                 {
-                    ray.direction = Quaternion.Euler(0, 0, 90) * ray.direction;
-                    lineRenderer.positionCount += 1;
-                    lineRenderer.SetPosition(lineRenderer.positionCount -1, hit.point);  //Case where the light hits the free refractor 
-                    remainingLength -= Vector3.Distance(ray.origin, hit.point);
-                    ray = new Ray(hit.point, ray.direction);
+                        lineRenderer.positionCount += 1;
+                        lineRenderer.SetPosition(lineRenderer.positionCount -1, hit.point);  
+                        remainingLength -= Vector3.Distance(ray.origin, hit.point);
 
-                    if(hit.collider.tag != "Mirror")
-                        break;
-                }           
+                    if(hit.collider.tag == "Up")
+                    {
+                        ray.direction = Vector3.up;
+                        ray = new Ray(hit.point, ray.direction);
+                        if(hit.collider.tag != "Up")
+                            break;
+                    }
+                    if(hit.collider.tag == "Down")
+                    {
+                        ray.direction = Vector3.down;
+                        ray = new Ray(hit.point, ray.direction);
+                        if(hit.collider.tag != "Down")
+                            break;
+                    }
+                    if(hit.collider.tag == "Mirror")
+                    {
+                        ray = new Ray(hit.point, Vector3.Reflect(ray.direction, hit.normal));
+                        if(hit.collider.tag != "Mirror")
+                            break;
+                    }
+                    if(hit.collider.tag == "Left")
+                    {
+                        ray.direction = Vector3.left;
+                        ray = new Ray(hit.point, ray.direction);
+                        if(hit.collider.tag != "Left")
+                            break;
+                    }
+                    if(hit.collider.tag == "Right")
+                    {
+                        ray.direction = Vector3.right;
+                        ray = new Ray(hit.point, ray.direction);
+                        if(hit.collider.tag != "Right")
+                            break;
+                    }
+
+                }
                 else
                 {
                     lineRenderer.positionCount += 1;
