@@ -180,8 +180,8 @@ MonoBehaviour:
   startScene: start_scene
   gameOverScene: end_scene
   gameLevels:
-  - level_00
-  - level_01
+  - Level01
+  - Level02
   gameLevelsCount: 0
   nextLevel: 1
   gameState: 0
