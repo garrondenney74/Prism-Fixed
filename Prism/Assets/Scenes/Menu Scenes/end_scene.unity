@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 95156173}
   - component: {fileID: 95156172}
+  - component: {fileID: 95156174}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -168,6 +169,7 @@ MonoBehaviour:
   gameLevels:
   - level_00
   - level_01
+  gameLevelsCount: 0
   nextLevel: 0
   gameState: 0
   playerWon: 0
@@ -185,6 +187,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95156174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95156171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc79d7a4464472649af30795781c92f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endMsgTextbox: {fileID: 0}
 --- !u!1 &660969369
 GameObject:
   m_ObjectHideFlags: 0

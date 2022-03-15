@@ -5,19 +5,14 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     // A static field accessible by code anywhere
-    static public bool goalMet = false;
+    GameManager gm = GameManager.GM;
     void OnTriggerEnter( Collider other ) 
     {
         // When the trigger is hit by something
         // Check to see if it's a Projectile
-        if ( other.gameObject.tag == "prismShot" ) 
+        if (other.gameObject.tag == "prismShot") 
         {
-            // If so, set goalMet to true
-            Goal.goalMet = true;
-            // Also set the alpha of the color to higher opacity
-            Color c = GetComponent<Renderer>().material.color;
-            c.a = 1;
-            GetComponent<Renderer>().material.color = c;
+            gm.nextLevel = true;
         }
 }
     // Start is called before the first frame update

@@ -1118,8 +1118,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
-  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1145,7 +1143,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 0.62352943}
+  m_BackGroundColor: {r: 0, g: 0.5377358, b: 0.47493887, a: 0.62352943}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1192,48 +1190,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa3536bc9fc2a244697ade33645d9031, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d49296548f6742498c9896ffedace25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameTitle: Prism
-  gameCredits: 'Made By: Garron Denney'
-  copyrightDate: Copyright 2022
-  recordHighScore: 0
-  defaultHighScore: 1000
-  numberOfLives: 0
-  levelLost: 0
-  defaultEndMessage: Game Over
-  looseMessage: You Lose
-  winMessage: You Win
-  endMsg: 
-  startScene: 
-  gameOverScene: 
-  gameLevels: []
-  gameLevelsCount: 0
-  nextLevel: 0
-  gameState: 0
-  playerWon: 0
 --- !u!1001 &1309588533
 PrefabInstance:
   m_ObjectHideFlags: 0
