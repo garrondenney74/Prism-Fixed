@@ -31,6 +31,12 @@ public class RaycastReflection : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
     }
 
+    public void theNextLevel()
+    {
+        gm.nextLevel = true;
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -91,7 +97,7 @@ public class RaycastReflection : MonoBehaviour
                     }
                     if(hit.collider.isTrigger)
                     {
-                        gm.nextLevel = true;
+                        Invoke("theNextLevel", 2f);
                     }
 
                 }

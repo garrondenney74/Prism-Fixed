@@ -3,7 +3,11 @@ guid: 0cb4dbcdd49ab4648bd320435b5e331f
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - levelTextbox: {fileID: 5796875904758492081, guid: 92936a53ced549142a65db797d21af35, type: 3}
+  - livesTextbox: {instanceID: 0}
+  - scoreTextbox: {fileID: 58312723541003186, guid: 66ca285f1687db34ea4a9fd63f2d65eb, type: 3}
+  - highScoreTextbox: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
