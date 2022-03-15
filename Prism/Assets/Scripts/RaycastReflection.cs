@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +15,9 @@ using UnityEngine;
 
 public class RaycastReflection : MonoBehaviour
 {
+    
     public int reflections;
+    GameManager gm = GameManager.GM;
     public float maxLength;
 
     private LineRenderer lineRenderer;
@@ -78,6 +88,10 @@ public class RaycastReflection : MonoBehaviour
                         ray = new Ray(hit.point, ray.direction);
                         if(hit.collider.tag != "Right")
                             break;
+                    }
+                    if(hit.collider.isTrigger)
+                    {
+                        gm.nextLevel = true;
                     }
 
                 }

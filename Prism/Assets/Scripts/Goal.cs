@@ -12,7 +12,7 @@ public class Goal : MonoBehaviour
         // Check to see if it's a Projectile
         if (other.gameObject.tag == "prismShot") 
         {
-            gm.nextLevel = true;
+            gm.NextLevel();
         }
 }
     // Start is called before the first frame update

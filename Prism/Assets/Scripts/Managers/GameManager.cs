@@ -207,7 +207,7 @@ public class GameManager : MonoBehaviour
     
     
     //GO TO THE NEXT LEVEL
-        void NextLevel()
+    public void NextLevel()
     {
         nextLevel = false; //reset the next level
 
