@@ -25,6 +25,7 @@ public class RaycastReflection : MonoBehaviour
     private Ray ray2;
     private RaycastHit hit;
     private Vector3 direction;
+    public GameObject portal2;
 
     private void Awake()
     {
@@ -44,9 +45,17 @@ public class RaycastReflection : MonoBehaviour
         
     }
 
+
+
+    void Portal()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {
+
+
         ray = new Ray(transform.position, transform.forward);
          
         lineRenderer.positionCount = 1;
@@ -58,33 +67,33 @@ public class RaycastReflection : MonoBehaviour
                 if(Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength))
                 {
                         lineRenderer.positionCount += 1;
-                        lineRenderer.SetPosition(lineRenderer.positionCount -1, hit.point);  
+                        lineRenderer.SetPosition(lineRenderer.positionCount -1, hit.point);  //creates the ray
                         remainingLength -= Vector3.Distance(ray.origin, hit.point);
 
                     if(hit.collider.tag == "Up")
                     {
                         ray.direction = Vector3.up;
-                        ray = new Ray(hit.point, ray.direction);
+                        ray = new Ray(hit.point, ray.direction); //if the object hit with the initial ray is an UpRefractor
                         if(hit.collider.tag != "Up")
                             break;
                     }
                     if(hit.collider.tag == "Down")
                     {
                         ray.direction = Vector3.down;
-                        ray = new Ray(hit.point, ray.direction);
+                        ray = new Ray(hit.point, ray.direction); // if the object hit with the initial ray is a DownRefractor
                         if(hit.collider.tag != "Down")
                             break;
                     }
                     if(hit.collider.tag == "Mirror")
                     {
-                        ray = new Ray(hit.point, Vector3.Reflect(ray.direction, hit.normal));
+                        ray = new Ray(hit.point, Vector3.Reflect(ray.direction, hit.normal)); //
                         if(hit.collider.tag != "Mirror")
                             break;
                     }
                     if(hit.collider.tag == "Left")
                     {
                         ray.direction = Vector3.left;
-                        ray = new Ray(hit.point, ray.direction);
+                        ray = new Ray(hit.point, ray.direction);  //if the object hit with the initial ray is a LeftRefractor
                         if(hit.collider.tag != "Left")
                             break;
                     }
@@ -99,12 +108,23 @@ public class RaycastReflection : MonoBehaviour
                     {
                         Invoke("theNextLevel", 2f);
                     }
+                    if(hit.collider.tag == "Portal1")
+                    {
 
+
+                        ray = new Ray(GameObject.FindWithTag("Portal2").transform.position, ray.direction); //Portal Refractor
+                        lineRenderer.positionCount = 1;
+                        lineRenderer.SetPosition(0, GameObject.FindWithTag("Portal2").transform.position);
+                        if(hit.collider.tag != "Portal1")
+                            break;
+                    }
+ 
                 }
                 else
                 {
                     lineRenderer.positionCount += 1;
                     lineRenderer.SetPosition(lineRenderer.positionCount - 1, ray.origin + ray.direction * remainingLength);
+                    
                 }
         }
     }

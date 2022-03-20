@@ -11,6 +11,8 @@ TagManager:
   - Right
   - prismShot
   - Goal
+  - Portal1
+  - Portal2
   layers:
   - Default
   - TransparentFX
