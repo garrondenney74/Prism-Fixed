@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 66
+  controlID: 25
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 67
+  controlID: 26
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 68
+  controlID: 27
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,23 +330,23 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ea3d0000
-    m_LastClickedID: 15850
-    m_ExpandedIDs: 00000000d83d0000da3d0000dc3d000000ca9a3b
+    m_SelectedIDs: e83d0000
+    m_LastClickedID: 15848
+    m_ExpandedIDs: 00000000da3d0000dc3d0000de3d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Game Scenes
-      m_OriginalName: Game Scenes
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 15848
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d83d0000da3d0000dc3d0000
+    m_ExpandedIDs: 00000000da3d0000dc3d0000de3d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -481,9 +481,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f43d0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e2aefcfff4b1fcff50b3fcff40b4fcff74b4fcffecb5fcff5eb9fcffc0bbfcff44bdfcff28bffcff72c0fcff56c2fcff56c3fcff28c5fcff9cc6fcff9cc7fcffded0fcff3ad4fcfff8d6fcffcad9fcffd6dcfcff42dffcffeee0fcff84e4fcffbee5fcff6ce9fcff2aeafcff42ecfcff4aedfcff04effcff64f0fcff68f1fcff7af4fcffacf5fcff38f7fcff96fafcfff0fffcff0402fdffd003fdff4c05fdff3a06fdff3e08fdffc20cfdfffc10fdff6012fdff3413fdff6614fdff5018fdff0e19fdffa81afdff041cfdff281dfdff6c1efdfff21ffdfff420fdff3421fdffac29fdff3631fdff6632fdff3034fdff9636fdffe438fdff4a3afdff4e3cfdfffc3cfdffbe3dfdff4e40fdff2a42fdff9e46fdff3448fdff2049fdff6c4afdffd24bfdfffe4cfdff1e4efdff9a4ffdffe450fdffb851fdff2e56fdff3a5afdff5c5efdff1c63fdff4e6cfdffbe6efdff1e71fdff3e72fdff5e73fdff9a74fdff7e79fdff9c7afdff2e7cfdff527dfdff287efdffaa8bfdffc48bfdff968cfdffb88cfdffc08efdff3699fdff909ffdff36b3fdff12b5fdff70d2fdff58e9fdff84f0fdffda04feff1614feff5245feff6646feff8e48feff5c4afefff8e5feff90e8feff22eafeffb8eafeff66ebfeff94ebfeff3cecfeffa2effeff84f2feff12f6feff38fafeff46fbfeff16fefeff7cfffeff9000ffff0003ffff5a0affffb40cffff100dffffe80effffc412ffffc615ffff8a16ffff88a1ffff8ea2fffffaa3ffff18a4ffff2aa5ffff64a5ffffbca6ffffd6a6ffff0ca7ffffeca8ffff06a9ffff1ca9ffff3ea9ffff62a9ffff6aaaffffceaaffffb6f1ffff44f2ffff72fbfffff4ffffff924000000c7b0000ba7e00005e800000ce8200001c840000d2ec0000aeef0000fcfe00003aff0000ce00010070010100e4050100a206010038080100e0080100ec0901008e0a0100fe0f0100ae150100541b01006a1f0100462001001c21010006240100b226010042290100123601004a3701005a390100a83b0100
+      m_ExpandedIDs: 72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -616,7 +616,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.022497501, y: 0.0014997147, z: 0.000043161046, w: 0.9997082}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -681,7 +681,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
